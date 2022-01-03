@@ -51,6 +51,7 @@ public class Restaurants extends javax.swing.JFrame {
         jLabelConvert.setVerticalAlignment(SwingConstants.CENTER); 
         //getContentPane().setBackground(Color.GREEN);
         jTextChitanta.setBackground(new java.awt.Color(0,0,0,1));
+        jTabbedPane1.remove(0);
         
       
     }
@@ -66,6 +67,7 @@ public class Restaurants extends javax.swing.JFrame {
         //getContentPane().setBackground(Color.GREEN);
         jTextChitanta.setBackground(new java.awt.Color(0,0,0,1));
         jLabelFood.setText(s);
+        jTabbedPane1.remove(0);
         
       
     }
@@ -130,9 +132,7 @@ public class Restaurants extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jBtnTotal = new javax.swing.JButton();
         jBtnReset = new javax.swing.JButton();
-        jBtnChitanta = new javax.swing.JButton();
         jBtnExit = new javax.swing.JButton();
-        jBtnPrint = new javax.swing.JButton();
         jButtonLogout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -415,6 +415,8 @@ public class Restaurants extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Calculator", jPanel7);
+
+        jTabbedPane1.setSelectedIndex(1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -709,32 +711,11 @@ public class Restaurants extends javax.swing.JFrame {
             }
         });
 
-        jBtnChitanta.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jBtnChitanta.setText("Chitanta");
-        jBtnChitanta.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jBtnChitantaMouseClicked(evt);
-            }
-        });
-        jBtnChitanta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnChitantaActionPerformed(evt);
-            }
-        });
-
         jBtnExit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jBtnExit.setText("Exit");
         jBtnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnExitActionPerformed(evt);
-            }
-        });
-
-        jBtnPrint.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jBtnPrint.setText("Print");
-        jBtnPrint.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnPrintActionPerformed(evt);
             }
         });
 
@@ -755,32 +736,22 @@ public class Restaurants extends javax.swing.JFrame {
                 .addComponent(jBtnTotal)
                 .addGap(50, 50, 50)
                 .addComponent(jBtnReset)
-                .addGap(50, 50, 50)
-                .addComponent(jBtnChitanta)
-                .addGap(50, 50, 50)
+                .addGap(66, 66, 66)
                 .addComponent(jBtnExit)
-                .addGap(56, 56, 56)
-                .addComponent(jBtnPrint)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGap(63, 63, 63)
                 .addComponent(jButtonLogout)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jBtnPrint, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBtnTotal)
-                            .addComponent(jBtnReset)
-                            .addComponent(jBtnChitanta)
-                            .addComponent(jBtnExit))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnTotal)
+                    .addComponent(jBtnReset)
+                    .addComponent(jBtnExit)
+                    .addComponent(jButtonLogout))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -838,139 +809,6 @@ public class Restaurants extends javax.swing.JFrame {
        
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn7ActionPerformed
-        String Enternumber=jtxtDisplay.getText()+ jBtn7.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn7ActionPerformed
-
-    private void jBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn4ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn4.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn4ActionPerformed
-
-    private void jBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn1ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn1.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn1ActionPerformed
-
-    private void jBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn0ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn0.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn0ActionPerformed
-
-    private void jBtnplusminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnplusminusActionPerformed
-        double ops = Double.parseDouble(String.valueOf(jtxtDisplay.getText()));
-        ops=ops * (-1);
-        jtxtDisplay.setText(String.valueOf(ops));
-    }//GEN-LAST:event_jBtnplusminusActionPerformed
-
-    private void jBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn5ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn5.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn5ActionPerformed
-
-    private void jBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn2ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn2.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn2ActionPerformed
-
-    private void jBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCActionPerformed
-       jtxtDisplay.setText(null);
-    }//GEN-LAST:event_jBtnCActionPerformed
-
-    private void jBtnpunctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnpunctActionPerformed
-        jtxtDisplay.setText(jtxtDisplay.getText()+jBtnpunct.getText());
-    }//GEN-LAST:event_jBtnpunctActionPerformed
-
-    private void jBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn8ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn8.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn8ActionPerformed
-
-    private void jBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn9ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn9.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn9ActionPerformed
-
-    private void jBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn6ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn6.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn6ActionPerformed
-
-    private void jBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn3ActionPerformed
-         String Enternumber=jtxtDisplay.getText()+ jBtn3.getText();
-        jtxtDisplay.setText(Enternumber);
-    }//GEN-LAST:event_jBtn3ActionPerformed
-
-    private void jBtnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnbackActionPerformed
-        String backspace = null;
-        
-        if(jtxtDisplay.getText().length() > 0){
-            StringBuilder strB = new StringBuilder(jtxtDisplay.getText());
-            strB.deleteCharAt(jtxtDisplay.getText().length() - 1);
-            backspace=strB.toString();
-            jtxtDisplay.setText(backspace);
-        }
-    }//GEN-LAST:event_jBtnbackActionPerformed
-
-    private void jBtnegalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnegalActionPerformed
-        String answer;
-        secondnum = Double.parseDouble(jtxtDisplay.getText());
-        if(operations == "+")
-        {
-            result = firstnum + secondnum;
-            answer= String.format("%.2f", result);
-            jtxtDisplay.setText(answer);
-        }
-        else if (operations == "-")
-        {
-            result = firstnum - secondnum;
-            answer= String.format("%.2f", result);
-            jtxtDisplay.setText(answer);        }
-        else if (operations == "*")
-        {
-            result = firstnum * secondnum;
-            answer= String.format("%.2f", result);
-            jtxtDisplay.setText(answer);
-        }
-        else if (operations == "/")
-        {
-            result = firstnum / secondnum;
-            answer= String.format("%.2f", result);
-            jtxtDisplay.setText(answer);
-        }
-        else if (operations == "%")
-        {
-            result = firstnum % secondnum;
-            answer= String.format("%.2f", result);
-            jtxtDisplay.setText(answer);
-        }
-    }//GEN-LAST:event_jBtnegalActionPerformed
-
-    private void jBtnplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnplusActionPerformed
-        firstnum = Double.parseDouble(jtxtDisplay.getText());
-        jtxtDisplay.setText("");
-        operations="+";
-    }//GEN-LAST:event_jBtnplusActionPerformed
-
-    private void jBtnminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnminusActionPerformed
-        firstnum = Double.parseDouble(jtxtDisplay.getText());
-        jtxtDisplay.setText("");
-        operations="-";
-    }//GEN-LAST:event_jBtnminusActionPerformed
-
-    private void jBtnoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnoriActionPerformed
-        firstnum = Double.parseDouble(jtxtDisplay.getText());
-        jtxtDisplay.setText("");
-        operations="*";
-    }//GEN-LAST:event_jBtnoriActionPerformed
-
-    private void jBtnimpartireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnimpartireActionPerformed
-        firstnum = Double.parseDouble(jtxtDisplay.getText());
-        jtxtDisplay.setText("");
-        operations="/";
-    }//GEN-LAST:event_jBtnimpartireActionPerformed
-
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         
     }//GEN-LAST:event_jComboBox2ActionPerformed
@@ -990,50 +828,6 @@ public class Restaurants extends javax.swing.JFrame {
        
         System.exit(0);
     }//GEN-LAST:event_jBtnExitActionPerformed
-
-    private void jBtnChitantaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChitantaActionPerformed
-       
-      /*
-         
-        jTextChitanta.setText("***********************************\n");
-        jTextChitanta.setText(jTextChitanta.getText()+"*                     Casa Ghincea                           *\n");
-        jTextChitanta.setText(jTextChitanta.getText()+"***********************************\n");
-         Date obj =new Date();
-         String date=obj.toString();
-         
-         jTextChitanta.setText(jTextChitanta.getText()+"\nData: "+date+"\n\n"); 
-         jTextChitanta.setText(jTextChitanta.getText()+"~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-         jTextChitanta.setText(jTextChitanta.getText()+"Ciorba de burta: "+value1+"x"+"\n\n");
-         jTextChitanta.setText(jTextChitanta.getText()+"Mamaliga: "+value2+"x"+"\n\n");
-         jTextChitanta.setText(jTextChitanta.getText()+"Piftea: "+value3+"x"+"\n\n");
-          if (jComboDrinks.getSelectedItem().equals("Selectati o bautura"))
-        {
-            jTextChitanta.setText(jTextChitanta.getText()+"Bautura: Nu, multumesc!"+"\n\n");
-           
-            
-        }
-          else{
-         jTextChitanta.setText(jTextChitanta.getText()+"Bautura: "+cevaValue+"\n\n");}
-          if(LivrareAcasa.isSelected())
-          {
-              jTextChitanta.setText(jTextChitanta.getText()+"Doriti sa serviti aici sau acasa? Acasa.\n");
-          }
-          else
-          {
-              jTextChitanta.setText(jTextChitanta.getText()+"Doriti sa serviti aici sau acasa? Aici.\n");
-          }
-          
-         jTextChitanta.setText(jTextChitanta.getText()+"~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-         jTextChitanta.setText(jTextChitanta.getText()+"Pretul total: "+jLabelTotal.getText()+"\n\n");
-         jTextChitanta.setText(jTextChitanta.getText()+"Va multumim si va mai asteptam la noi!");
-         */
-        
-    }//GEN-LAST:event_jBtnChitantaActionPerformed
-
-    private void jBtnChitantaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBtnChitantaMouseClicked
-      
-        
-    }//GEN-LAST:event_jBtnChitantaMouseClicked
 
      double ParseDouble(String strNumber) {
      double rezultat=0;
@@ -1183,17 +977,6 @@ public class Restaurants extends javax.swing.JFrame {
     Connection con = null;
     PreparedStatement pst = null;
     
-    private void jBtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPrintActionPerformed
-        
-        try
-        {
-            jTextChitanta.print();
-        }
-        catch(java.awt.print.PrinterException e){
-            System.err.format("No Printer Found",e.getMessage());
-        }
-    }//GEN-LAST:event_jBtnPrintActionPerformed
-
     private void jBtnmenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnmenuActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
@@ -1223,6 +1006,139 @@ public class Restaurants extends javax.swing.JFrame {
         Login ceva = new Login();
         ceva.setVisible(true);
     }//GEN-LAST:event_jButtonLogoutActionPerformed
+
+    private void jBtnimpartireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnimpartireActionPerformed
+        firstnum = Double.parseDouble(jtxtDisplay.getText());
+        jtxtDisplay.setText("");
+        operations="/";
+    }//GEN-LAST:event_jBtnimpartireActionPerformed
+
+    private void jBtnoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnoriActionPerformed
+        firstnum = Double.parseDouble(jtxtDisplay.getText());
+        jtxtDisplay.setText("");
+        operations="*";
+    }//GEN-LAST:event_jBtnoriActionPerformed
+
+    private void jBtnminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnminusActionPerformed
+        firstnum = Double.parseDouble(jtxtDisplay.getText());
+        jtxtDisplay.setText("");
+        operations="-";
+    }//GEN-LAST:event_jBtnminusActionPerformed
+
+    private void jBtnplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnplusActionPerformed
+        firstnum = Double.parseDouble(jtxtDisplay.getText());
+        jtxtDisplay.setText("");
+        operations="+";
+    }//GEN-LAST:event_jBtnplusActionPerformed
+
+    private void jBtnegalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnegalActionPerformed
+        String answer;
+        secondnum = Double.parseDouble(jtxtDisplay.getText());
+        if(operations == "+")
+        {
+            result = firstnum + secondnum;
+            answer= String.format("%.2f", result);
+            jtxtDisplay.setText(answer);
+        }
+        else if (operations == "-")
+        {
+            result = firstnum - secondnum;
+            answer= String.format("%.2f", result);
+            jtxtDisplay.setText(answer);        }
+        else if (operations == "*")
+        {
+            result = firstnum * secondnum;
+            answer= String.format("%.2f", result);
+            jtxtDisplay.setText(answer);
+        }
+        else if (operations == "/")
+        {
+            result = firstnum / secondnum;
+            answer= String.format("%.2f", result);
+            jtxtDisplay.setText(answer);
+        }
+        else if (operations == "%")
+        {
+            result = firstnum % secondnum;
+            answer= String.format("%.2f", result);
+            jtxtDisplay.setText(answer);
+        }
+    }//GEN-LAST:event_jBtnegalActionPerformed
+
+    private void jBtnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnbackActionPerformed
+        String backspace = null;
+
+        if(jtxtDisplay.getText().length() > 0){
+            StringBuilder strB = new StringBuilder(jtxtDisplay.getText());
+            strB.deleteCharAt(jtxtDisplay.getText().length() - 1);
+            backspace=strB.toString();
+            jtxtDisplay.setText(backspace);
+        }
+    }//GEN-LAST:event_jBtnbackActionPerformed
+
+    private void jBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn3ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn3.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn3ActionPerformed
+
+    private void jBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn6ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn6.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn6ActionPerformed
+
+    private void jBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn9ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn9.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn9ActionPerformed
+
+    private void jBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn8ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn8.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn8ActionPerformed
+
+    private void jBtnpunctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnpunctActionPerformed
+        jtxtDisplay.setText(jtxtDisplay.getText()+jBtnpunct.getText());
+    }//GEN-LAST:event_jBtnpunctActionPerformed
+
+    private void jBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCActionPerformed
+        jtxtDisplay.setText(null);
+    }//GEN-LAST:event_jBtnCActionPerformed
+
+    private void jBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn2ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn2.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn2ActionPerformed
+
+    private void jBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn5ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn5.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn5ActionPerformed
+
+    private void jBtnplusminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnplusminusActionPerformed
+        double ops = Double.parseDouble(String.valueOf(jtxtDisplay.getText()));
+        ops=ops * (-1);
+        jtxtDisplay.setText(String.valueOf(ops));
+    }//GEN-LAST:event_jBtnplusminusActionPerformed
+
+    private void jBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn0ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn0.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn0ActionPerformed
+
+    private void jBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn1ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn1.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn1ActionPerformed
+
+    private void jBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn4ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn4.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn4ActionPerformed
+
+    private void jBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn7ActionPerformed
+        String Enternumber=jtxtDisplay.getText()+ jBtn7.getText();
+        jtxtDisplay.setText(Enternumber);
+    }//GEN-LAST:event_jBtn7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1273,11 +1189,9 @@ public class Restaurants extends javax.swing.JFrame {
     private javax.swing.JButton jBtnAcasa;
     private javax.swing.JButton jBtnAici;
     private javax.swing.JButton jBtnC;
-    private javax.swing.JButton jBtnChitanta;
     private javax.swing.JButton jBtnClose;
     private javax.swing.JButton jBtnConvert;
     private javax.swing.JButton jBtnExit;
-    private javax.swing.JButton jBtnPrint;
     private javax.swing.JButton jBtnReset;
     private javax.swing.JButton jBtnTotal;
     private javax.swing.JButton jBtnback;
@@ -1315,7 +1229,7 @@ public class Restaurants extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    public static javax.swing.JTextArea jTextChitanta;
+    private javax.swing.JTextArea jTextChitanta;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jtxtDisplay;
