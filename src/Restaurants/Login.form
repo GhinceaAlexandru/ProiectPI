@@ -239,7 +239,7 @@
               <Font name="Tahoma" size="14" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/restaurant.jpg"/>
+              <Image iconType="3" name="/Restaurants/images/restaurant.jpg"/>
             </Property>
           </Properties>
           <Constraints>

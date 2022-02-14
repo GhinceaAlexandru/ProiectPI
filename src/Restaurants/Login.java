@@ -5,22 +5,29 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
-import Restaurants.Restaurants;
+//import Restaurants.Restaurants;
 import java.awt.Dimension;
+import java.awt.Image;
 
 import java.sql.*;
+import javax.swing.ImageIcon;
 /**
  *
- * @author ghinc
+ * @author ghincea
  */
 public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form Login
+     * Despre Login : cu un username si o parola ne putem conecta ca un simplu client sau ca manager-ul localului
      */
     public Login() {
         initComponents();
         setTitle("Loggin");
+        
+        
+        
+        
+        
         
         
         
@@ -164,7 +171,7 @@ public class Login extends javax.swing.JFrame {
         jLabelPass.setBounds(340, 130, 140, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/restaurant.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Restaurants/images/restaurant.jpg"))); // NOI18N
         jPanel5.add(jLabel2);
         jLabel2.setBounds(0, 0, 560, 550);
 
@@ -202,7 +209,7 @@ public class Login extends javax.swing.JFrame {
             this.setVisible(false);
             AdminPanel ceva = new AdminPanel();
             ceva.setVisible(true);
-            
+           
         }
         else {
          try{
@@ -214,8 +221,8 @@ public class Login extends javax.swing.JFrame {
              pst.setString(2,jPasswordField2.getText());
              ResultSet rs = pst.executeQuery();
              if(rs.next()){
-                 JOptionPane.showMessageDialog(null,"Username and Password matched!!!");
-                 Restaurants ghincea=new Restaurants();
+                // JOptionPane.showMessageDialog(null,"Username and Password matched!!!");
+                 Main ghincea=new Main();
                  ghincea.setVisible(true);
                  setVisible(false);
              }
